@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sources/css/reset.css">
+    <link rel="stylesheet" href="./sources/fonts/fonts.css">
+    <link rel="stylesheet" href="./sources/css/style.css">
+    <link rel="stylesheet" href="./sources/css/responsive.css">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="./sources/favicon/favicon.ico">
+
+    <title>sound-board</title>
+</head>
+<body>
+    <!-- base for 3d sound board -->
+    <div class="base">
+        <div class="pivot-y">
+            <div class="pivot-x">
+                <div class="face x-neg side-face">
+                    <div class="brand">YoYosTyLe</div>
+                </div>
+                <div class="face x-pos side-face"></div>
+                <div class="face y-neg"></div>
+
+                <!-- here it's top face of 3d sound board composed with the screen and sound button-->
+                <div class="face y-pos">
+                    <!-- screen -->
+                    <div class="screen">
+                        <div class="screen face-screen y-pos-screen"></div>
+                        <div class="screen face-screen x-neg-screen"></div>
+                        <div class="screen face-screen x-neg-shadow-screen"></div>
+                        <div class="screen face-screen z-neg-screen"></div>
+                        <div class="screen face-screen z-neg-shadow-screen"></div>
+                    </div>
+                    <!-- buttons -->
+                    <div class="buttons ">
+                        <div class="button" data-button-index="0">
+                            <div class="face-button y-pos-button color-1"></div>
+                            <div class="face-button x-neg-button"></div>
+                            <div class="face-button x-neg-button-shadow"></div>
+                            <div class="face-button z-neg-button"></div>
+                            <div class="face-button z-neg-button-shadow"></div>
+                            <!-- <div class="button face-button x-pos-button"></div>
+                            <div class="button face-button z-pos-button"></div> -->
+                        </div>
+                        <div class="button" data-button-index="1">
+                            <div class="face-button y-pos-button color-2"></div>
+                            <div class="face-button x-neg-button"></div>
+                            <div class="face-button x-neg-button-shadow"></div>
+                            <div class="face-button z-neg-button"></div>
+                            <div class="face-button z-neg-button-shadow"></div>
+                        </div>
+                        <div class="button" data-button-index="2">
+                            <div class="face-button y-pos-button color-3"></div>
+                            <div class="face-button x-neg-button"></div>
+                            <div class="face-button x-neg-button-shadow"></div>
+                            <div class="face-button z-neg-button"></div>
+                            <div class="face-button z-neg-button-shadow"></div>
+                        </div>
+                        <div class="button" data-button-index="3">
+                            <div class="face-button y-pos-button color-4"></div>
+                            <div class="face-button x-neg-button"></div>
+                            <div class="face-button x-neg-button-shadow"></div>
+                            <div class="face-button z-neg-button"></div>
+                            <div class="face-button z-neg-button-shadow"></div>
+                        </div>
+                        <div class="button" data-button-index="4">
+                            <div class="face-button y-pos-button color-5"></div>
+                            <div class="face-button x-neg-button"></div>
+                            <div class="face-button x-neg-button-shadow"></div>
+                            <div class="face-button z-neg-button"></div>
+                            <div class="face-button z-neg-button-shadow"></div>
+                        </div>
+                        <div class="button" data-button-index="5">
+                            <div class="face-button y-pos-button color-6"></div>
+                            <div class="face-button x-neg-button"></div>
+                            <div class="face-button x-neg-button-shadow"></div>
+                            <div class="face-button z-neg-button"></div>
+                            <div class="face-button z-neg-button-shadow"></div>
+                        </div>
+                        <div class="button" data-button-index="6">
+                            <div class="face-button y-pos-button color-7"></div>
+                            <div class="face-button x-neg-button"></div>
+                            <div class="face-button x-neg-button-shadow"></div>
+                            <div class="face-button z-neg-button"></div>
+                            <div class="face-button z-neg-button-shadow"></div>
+                        </div>
+                        <div class="button" data-button-index="7">
+                            <div class="face-button y-pos-button color-8"></div>
+                            <div class="face-button x-neg-button"></div>
+                            <div class="face-button x-neg-button-shadow"></div>
+                            <div class="face-button z-neg-button"></div>
+                            <div class="face-button z-neg-button-shadow"></div>
+                        </div>
+                        <div class="button" data-button-index="8">
+                            <div class="face-button y-pos-button color-9"></div>
+                            <div class="face-button x-neg-button"></div>
+                            <div class="face-button x-neg-button-shadow"></div>
+                            <div class="face-button z-neg-button"></div>
+                            <div class="face-button z-neg-button-shadow"></div>
+                        </div>
+                        <div class="button" data-button-index="9">
+                            <div class="face-button y-pos-button color-10"></div>
+                            <div class="face-button x-neg-button"></div>
+                            <div class="face-button x-neg-button-shadow"></div>
+                            <div class="face-button z-neg-button"></div>
+                            <div class="face-button z-neg-button-shadow"></div>
+                        </div>
+                        <div class="button" data-button-index="10">
+                            <div class="face-button y-pos-button color-11"></div>
+                            <div class="face-button x-neg-button"></div>
+                            <div class="face-button x-neg-button-shadow"></div>
+                            <div class="face-button z-neg-button"></div>
+                            <div class="face-button z-neg-button-shadow"></div>
+                        </div>
+                        <div class="button" data-button-index="11">
+                            <div class="face-button y-pos-button color-12"></div>
+                            <div class="face-button x-neg-button"></div>
+                            <div class="face-button x-neg-button-shadow"></div>
+                            <div class="face-button z-neg-button"></div>
+                            <div class="face-button z-neg-button-shadow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="face z-neg side-face"></div>
+                <div class="face z-pos side-face"></div>
+            </div>
+        </div>
+    </div>
+    <!-- here it's responsive flat sound board -->
+    <div class="base-responsive">
+        <div class="screen-responsive"></div>
+        <div class="buttons-responsive">
+            <div class="button-responsive color-1" data-button-responsive-index="0"></div>
+            <div class="button-responsive color-2" data-button-responsive-index="1"></div>
+            <div class="button-responsive color-3" data-button-responsive-index="2"></div>
+            <div class="button-responsive color-4" data-button-responsive-index="3"></div>
+            <div class="button-responsive color-5" data-button-responsive-index="4"></div>
+            <div class="button-responsive color-6" data-button-responsive-index="5"></div>
+            <div class="button-responsive color-7" data-button-responsive-index="6"></div>
+            <div class="button-responsive color-8" data-button-responsive-index="7"></div>
+            <div class="button-responsive color-9" data-button-responsive-index="8"></div>
+            <div class="button-responsive color-10" data-button-responsive-index="9"></div>
+            <div class="button-responsive color-11" data-button-responsive-index="10"></div>
+            <div class="button-responsive color-12" data-button-responsive-index="11"></div>
+        </div>
+        <div class="brand-responsive">YoYosTyLe</div>
+    </div>
+    <script src="./sources/javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+@font-face {
+    font-family: "Cooper-black";
+    src: url("./CooperBlack.woff2") format("woff2"),
+         url("./CooperBlack.woff") format("woff");
+   }

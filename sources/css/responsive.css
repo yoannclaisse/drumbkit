@@ -1,0 +1,211 @@
+/*HERE IT'S ALL SETTING FOR RESPONSIVE*/
+
+@media (max-width: 1240px)
+{
+    .base
+    {
+        left: 40%
+    }
+}
+
+
+@media (max-width: 900px)
+{
+    .base *
+    {
+        display: none;
+    }
+
+    .base
+    {
+        display: none;
+    }
+
+    .base-responsive
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 30%;
+    left: 35%;
+    }
+
+    .screen-responsive
+    {
+        height: 300px;
+        width: 300px;
+        background: blue;
+    }
+
+    .buttons-responsive
+    {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        padding: 20px;
+        /* background: pink; */
+        border: 2px solid #000000;
+        box-shadow: 0px 0px 10px 0px #00ffff;
+        background: #000;
+    }
+
+    .button-responsive
+    {
+        cursor: pointer;
+        height: 80px;
+        width: 80px;
+        box-shadow: 0px 0px 10px 0px #ffffff;
+    }
+
+    .button-responsive .color-1
+    {
+        background: radial-gradient(#ffffff,#ff0000);
+    }
+
+    .button-responsive .color-1:active
+    {
+    background: radial-gradient(#ff0000, #ffffff);
+    }
+
+    .button-responsive .color-2
+    {
+        background: radial-gradient(#ffffff,#00ff37);
+    }
+
+    .button-responsive .color-2:active
+    {
+    background: radial-gradient(#00ff37, #ffffff);
+    }
+
+    .button-responsive .color-3
+    {
+        background: radial-gradient(#ffffff,#fbff00);
+    }
+
+    .button-responsive .color-3:active
+    {
+    background: radial-gradient(#fbff00, #ffffff);
+    }
+
+    .button-responsive .color-4
+    {
+        background: radial-gradient(#ffffff,#ff00ff);
+    }
+
+    .button-responsive .color-4:active
+    {
+    background: radial-gradient(#ff00ff, #ffffff);
+    }
+
+    .button-responsive .color-5
+    {
+        background: radial-gradient(#ffffff,#ffae00);
+    }
+
+    .button-responsive .color-5:active
+    {
+    background: radial-gradient(#ffae00, #ffffff);
+    }
+
+    .button-responsive .color-6
+    {
+        background: radial-gradient(#ffffff,#09ff00);
+    }
+
+    .button-responsive .color-6:active
+    {
+    background: radial-gradient(#09ff00, #ffffff);
+    }
+
+    .button-responsive .color-7
+    {
+        background: radial-gradient(#ffffff,#650079);
+    }
+
+    .button-responsive .color-7:active
+    {
+    background: radial-gradient(#650079, #ffffff);
+    }
+
+    .button-responsive .color-8
+    {
+        background: radial-gradient(#ffffff,#00b7ff);
+    }
+
+    .button-responsive .color-8:active
+    {
+    background: radial-gradient(#00b7ff, #ffffff);
+    }
+
+    .button-responsive .color-9
+    {
+        background: radial-gradient(#ffffff,#7bff00);
+    }
+
+    .button-responsive .color-9:active
+    {
+    background: radial-gradient(#7bff00, #ffffff);
+    }
+
+    .button-responsive .color-10
+    {
+        background: radial-gradient(#ffffff,#059100);
+    }
+
+    .button-responsive .color-10:active
+    {
+    background: radial-gradient(#059100, #ffffff);
+    }
+
+    .button-responsive .color-11
+    {
+        background: radial-gradient(#ffffff,#ff0062);
+    }
+
+    .button-responsive .color-11:active
+    {
+    background: radial-gradient(#ff0062, #ffffff);
+    }
+
+    .button-responsive .color-12
+    {
+        background: radial-gradient(#ffffff,#e66465);
+    }
+
+    .button-responsive .color-12:active
+    {
+    background: radial-gradient(#e66456, #ffffff);
+    }
+
+    .brand-responsive
+    {
+        display: initial;
+        position: absolute;
+        top: 690px;
+        font-family: "Cooper-black";
+        color: #ffffff;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .screen-responsive
+    {
+        height: 300px;
+        width: 300px;
+        background: blue;
+    }
+
+    .buttons-responsive
+    {
+        flex-flow: column wrap;
+        width: 320px;
+        height: 380px;
+        background: #000000;
+    }
+}

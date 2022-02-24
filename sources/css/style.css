@@ -1,0 +1,359 @@
+body
+{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#464646, #222222);
+    position: relative;
+}
+
+/*----BASE FOR 3D SOUNDBOARD--------*/
+
+body .base 
+{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    perspective: 800px;
+}
+
+body .base * 
+{
+    transform-style: preserve-3d;
+}
+
+.base .pivot-x
+{
+    transform: rotateZ(200deg);
+}
+
+.base .pivot-y
+{
+    transform: rotateY(230deg);
+}
+
+/*-----FACES SETTING 3D SOUND BOARD---------*/
+
+.base .face
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(-400px / 2);
+    left: calc(-400px / 2);
+    width: 400px;
+    height: 400px;
+    background: #000000;
+}
+
+.base .side-face
+{
+    height: 50px;
+}
+
+.base .face.x-pos
+{
+    transform: rotateY(90deg) translateZ(0px); 
+    background: #00ffff;
+    box-shadow: 0px -20px 174px 15px #00ffff;
+    width: 800px;
+}
+
+.base .face.x-neg
+{
+    transform: rotateY(-90deg) translateZ(400px) rotate(180deg); 
+    background: #111111;
+    width: 800px;
+}
+
+.base .face.x-neg .brand
+{
+    font-family: "Cooper-black";
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.brand-responsive
+{
+    display: none;
+}
+
+.base .face.y-pos
+{
+    transform: rotateX(-90deg) translateZ(-350px);
+    background: #222222;
+    height: 800px;
+}
+
+.base .face.y-neg
+{
+    transform: rotateX(90deg) translateZ(400px);
+    height: 800px;
+}
+
+.base .face.z-neg
+{
+    transform: rotateY(180deg) translateZ(400px);
+    background: #00ffff;
+    box-shadow: 0px -20px 174px 15px #00ffff;
+}
+
+.base .face.z-pos
+{
+    transform: rotateY(0deg) translateZ(400px);
+    background: #00ffff;
+    box-shadow: 0px -20px 174px 15px #00ffff;
+}
+
+/*---SETTINGS FOR TOP FACES ELEMENTS-----*/
+
+/*----SCREEN-----*/
+
+.base .screen
+{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.base .screen .face-screen
+{
+    background: #ffffff;
+}
+
+.base .screen .face-screen.y-pos-screen
+{
+    transform: rotateX(180deg) translateZ(-10px) rotate(90deg);
+}
+
+.base .screen .face-screen.x-neg-screen
+{
+    width: 300px;
+    height: 10px;
+    transform: rotateX(90deg) translateZ(-295px) translateY(5px);
+    background: #2600ff;
+}
+
+.base .screen .face-screen.x-neg-shadow-screen
+{
+    width: 300px;
+    height: 10px;
+    transform: rotateX(180deg) translateZ(-1px) translateY(-290px);
+    background: #2600ff;
+    box-shadow: -5px -10px 20px 0px #2600ff;
+}
+
+.base .screen .face-screen.z-neg-screen
+{
+    width: 10px;
+    height: 305px;
+    transform: rotateY(-90deg) translateX(5px) translateY(-5px) translateZ(5px);
+    background: #2600ff;
+}
+
+.base .screen .face-screen.z-neg-shadow-screen
+{
+    width: 10px;
+    height: 305px;
+    transform: rotateY(0deg) translateX(5px) translateY(-5px) translateZ(5px);
+    background: #2600ff;
+    box-shadow: -15px 20px 20px 0px #2600ff;
+}
+
+/*----BUTTONS----*/
+
+.base .buttons
+{
+    position: absolute;
+    top: 490px;
+    left: 20px;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 290px;
+    /* background: #ffffff; */
+    /* border: 1px solid #ffffff; */
+    transform: rotateX(180deg) translateZ(-1px);
+    cursor: pointer;
+}
+
+.buttons .button
+{
+    width: 71px;
+    height: 65px;
+}
+
+
+.button:active
+{
+    transform: translateZ(10px);
+}
+
+.button .face-button.y-pos-button
+{
+    width: 71px;
+    height: 65px;
+    transform: rotateX(180deg) translateZ(10px);
+
+}
+
+.button .face-button.x-neg-button
+{
+    width: 71px;
+    height: 10px;
+    transform: rotateX(90deg) translateZ(70px) translateY(-5px);
+    background: #2600ff;
+}
+
+.button .face-button.x-neg-button-shadow
+{
+    width: 71px;
+    height: 10px;
+    transform: rotateX(0deg) translateZ(0px) translateY(-75px);
+    background: #2600ff;
+    box-shadow: -5px -5px 20px 0px #2600ff;
+}
+
+.button .face-button.z-neg-button
+{
+    width: 10px;
+    height: 67px;
+    transform: rotateY(-90deg) translateX(-5px) translateY(-85px) translateZ(5px);
+    background: blue;
+}
+
+.button .face-button.z-neg-button-shadow
+{
+    width: 10px;
+    height: 67px;
+    transform: rotateY(0deg) translateX(0px) translateY(-152px) translateZ(0px);
+    background: blue;
+    box-shadow: -5px -5px 20px 0px #2600ff;
+}
+
+/*----BUTTON COLOR NORMAL AND ACTIVE----*/
+
+.color-1
+{
+    background: radial-gradient(#ffffff,#ff0000);
+}
+
+.color-1:active
+{
+    background: radial-gradient(#ff0000,#ffffff);
+}
+
+.color-2
+{
+    background: radial-gradient(#ffffff,#00ff37);
+}
+
+.color-2:active
+{
+    background: radial-gradient(#00ff37,#ffffff);
+}
+
+.color-3
+{
+    background: radial-gradient(#ffffff,#fbff00);
+}
+
+.color-3:active
+{
+    background: radial-gradient(#fbff00,#ffffff);
+}
+
+.color-4
+{
+    background: radial-gradient(#ffffff,#ff00ff);
+}
+
+.color-4:active
+{
+    background: radial-gradient(#ff00ff,#ffffff);
+}
+
+.color-5
+{
+    background: radial-gradient(#ffffff,#18ff90);
+}
+
+.color-5:active
+{
+    background: radial-gradient(#18ff90,#ffffff);
+}
+
+.color-6
+{
+    background: radial-gradient(#ffffff,#09ff00);
+}
+
+.color-6:active
+{
+    background: radial-gradient(#09ff00,#ffffff);
+}
+
+.color-7
+{
+    background: radial-gradient(#ffffff,#e564ff);
+}
+
+.color-7:active
+{
+    background: radial-gradient(#e564ff,#ffffff);
+}
+
+.color-8
+{
+    background: radial-gradient(#ffffff,#ffc750);
+}
+
+.color-8:active
+{
+    background: radial-gradient(#ffc750,#ffffff);
+}
+
+.color-9
+{
+    background: radial-gradient(#ffffff,#7bff00);
+}
+
+.color-9:active
+{
+    background: radial-gradient(#7bff00,#ffffff);
+}
+
+.color-10
+{
+    background: radial-gradient(#ffffff,#81ff7c);
+}
+
+.color-10:active
+{
+    background: radial-gradient(#81ff7c,#ffffff);
+}
+
+.color-11
+{
+    background: radial-gradient(#ffffff,#ff0062);
+}
+.color-11:active
+{
+    background: radial-gradient(#ff0062,#ffffff);
+}
+
+.color-12
+{
+    background: radial-gradient(#ffffff,#ff6f6f);
+}
+
+.color-12:active
+{
+    background: radial-gradient(#ff6f6f,#ffffff);
+}
+
+
